@@ -29,6 +29,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.ajibsbaba.composekyc.ui.theme.Blue30
 import com.ajibsbaba.composekyc.ui.theme.Blue40
 import com.ajibsbaba.composekyc.ui.theme.DarkGrey
@@ -36,7 +38,7 @@ import com.ajibsbaba.composekyc.ui.theme.Purple
 import com.ajibsbaba.composekyc.ui.theme.Typography
 
 @Composable
-fun ComplianceScreen() {
+fun ComplianceScreen(navController: NavController = rememberNavController()) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -281,7 +283,7 @@ fun ComplianceScreen() {
                         .height(56.dp)
                         .fillMaxWidth(),
                         colors = ButtonDefaults.buttonColors(containerColor = Purple),
-                        onClick = { /*TODO*/ }) {
+                        onClick = { navController.navigate(NavigationRoutes.CustomerRequirement) }) {
                         Text(
                             text = stringResource(id = R.string.start),
                             style = TextStyle(
@@ -300,7 +302,7 @@ fun ComplianceScreen() {
 }
 
 @Composable
-fun CustomerRequirementScreen() {
+fun CustomerRequirementScreen(navController: NavController = rememberNavController()) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -343,7 +345,7 @@ fun CustomerRequirementScreen() {
                     .height(56.dp)
                     .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(containerColor = Purple),
-                    onClick = { /*TODO*/ }) {
+                    onClick = { navController.navigate(NavigationRoutes.VerificationSubmitted) }) {
                     Text(
                         text = stringResource(id = R.string.continue_verification),
                         style = TextStyle(
@@ -362,7 +364,7 @@ fun CustomerRequirementScreen() {
 }
 
 @Composable
-fun VerificationSubmittedScreen() {
+fun VerificationSubmittedScreen(navController: NavController = rememberNavController()) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -452,7 +454,7 @@ fun VerificationSubmittedScreen() {
                     .height(56.dp)
                     .fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF796CF7)),
-                    onClick = { /*TODO*/ }) {
+                    onClick = { navController.navigate(NavigationRoutes.VerificationComplete) }) {
                     Text(
                         text = stringResource(id = R.string.done),
                         style = TextStyle(
