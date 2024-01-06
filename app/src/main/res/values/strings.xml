@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Compose KYC</string>
+    <string name="one_more_thing">One more thing!</string>
+    <string name="cbn_policy">In accordance with CBN regulations, for compliance and documentation you will need to supply the following:</string>
+    <string name="bvn">Bank Verification Number (BVN)</string>
+    <string name="bvn_code">You can dial the short code (*565*0#)</string>
+    <string name="face_verification">Face verification</string>
+    <string name="camera_background_copy">Camera with clear background</string>
+    <string name="residential_address">Residential address</string>
+    <string name="document_upload">Document upload</string>
+    <string name="estimated_completion_time">Estimated completion time</string>
+    <string name="ten_mins">10 mins</string>
+    <string name="later">Later</string>
+    <string name="start">Start</string>
+    <string name="kyc_requirement">Customer (KYC) Requirement</string>
+    <string name="continue_verification">Continue verification</string>
+    <string name="verification_submitted">Verification Submitted</string>
+    <string name="verification_completed">Verification Completed</string>
+    <string name="verification_body">Thank you for your submissions, We are currently reviewing your documents.</string>
+    <string name="done">Done</string>
+    <string name="day_count">1–2 business day</string>
+    <string name="we_usually_take">We usually take</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="transfer_limit">Transfer limit</string>
+    <string name="fund">Fund</string>
+    <string name="cbn_description_long">The Central Bank of Nigeria mandates strict Know Your Customer (KYC) document requirements for banks to ensure the integrity of the financial system. These requirements, which include proof of identity, address, income, and references, are crucial in preventing financial crimes like money laundering and fraud. They help establish transparency, identify beneficial owners, and monitor transactions, safeguarding both financial institutions and Nigeria\'s financial stability. Staying informed about these evolving requirements is essential for all customers. Read more</string>
+    <string name="deposit_limit">Deposit limit</string>
 </resources>
